@@ -1,8 +1,8 @@
 ﻿namespace TennisCorner.Data.Configurations
 {
-    using TennisCorner.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using TennisCorner.Data.Models;
 
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {

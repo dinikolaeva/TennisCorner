@@ -2,17 +2,6 @@
 {
     using System.Reflection;
 
-    using TennisCorner.Data;
-    using TennisCorner.Data.Common;
-    using TennisCorner.Data.Common.Repositories;
-    using TennisCorner.Data.Models;
-    using TennisCorner.Data.Repositories;
-    using TennisCorner.Data.Seeding;
-    using TennisCorner.Services.Data;
-    using TennisCorner.Services.Mapping;
-    using TennisCorner.Services.Messaging;
-    using TennisCorner.Web.ViewModels;
-
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -21,6 +10,15 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using TennisCorner.Data;
+    using TennisCorner.Data.Common;
+    using TennisCorner.Data.Common.Repositories;
+    using TennisCorner.Data.Models;
+    using TennisCorner.Data.Repositories;
+    using TennisCorner.Data.Seeding;
+    using TennisCorner.Services.Mapping;
+    using TennisCorner.Services.Messaging;
+    using TennisCorner.Web.ViewModels;
 
     public class Startup
     {
@@ -64,7 +62,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

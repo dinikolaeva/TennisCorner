@@ -99,7 +99,7 @@ h1 {
 .item {
     display: none;
     position: relative;
-    .transition(s ease-in-out left);
+    /*.transition(s ease-in-out left);*/
 }
 
 .slider-contant h3 {
@@ -495,7 +495,6 @@ div.menu .dropdown-menu {
         font-style: italic;
         font-weight: 300;
         font-size: 18px;
-        background:;
         border: solid #9acd32 2px;
     }
 
@@ -670,6 +669,33 @@ div.full-slider .carousel-indicators {
     position: relative;
     padding-top: 20px;
 }
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+    text-align: center;
+}
+
+.image-holder {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+    .image-holder img {
+        width: 100%;
+        margin-left: -110%;
+        margin-top: -50%;
+    }
 
 .right-match-time h2 {
     color: #fff;
@@ -1552,7 +1578,7 @@ footer div.full p {
     margin-top: 50px;
     min-height: auto;
     padding: 50px 0;
-    background-position: cover;
+    /*background-position: cover;*/
     color: #fff;
 }
 
@@ -1725,7 +1751,7 @@ body section#contant .post-info span h5 {
     .btn:hover, .btn:focus {
         background: #111;
         color: #fff !important;
-        transition: ease a11 1s;
+        transition: ease all 1s;
     }
 
 .blog-sidebar {

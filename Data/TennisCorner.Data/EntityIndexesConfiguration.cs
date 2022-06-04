@@ -2,9 +2,8 @@
 {
     using System.Linq;
 
-    using TennisCorner.Data.Common.Models;
-
     using Microsoft.EntityFrameworkCore;
+    using TennisCorner.Data.Common.Models;
 
     internal static class EntityIndexesConfiguration
     {
