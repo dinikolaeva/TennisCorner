@@ -23,6 +23,18 @@
         {
         }
 
+        public DbSet<Country> Countries { get; set; }
+
+        public DbSet<Player> Players { get; set; }
+
+        public DbSet<PlayingCategory> PlayingCategories { get; set; }
+
+        public DbSet<Surface> Surfaces { get; set; }
+
+        public DbSet<Tournament> Tournaments { get; set; }
+
+        public DbSet<TournamentPlayingCategory> TournamentPlayingCategories { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

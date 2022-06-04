@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\TennisCorner.Common\TennisCorner.Common.csproj" />
     <ProjectReference Include="..\TennisCorner.Data.Common\TennisCorner.Data.Common.csproj" />
   </ItemGroup>
   
