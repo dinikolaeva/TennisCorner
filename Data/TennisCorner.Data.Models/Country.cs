@@ -1,5 +1,6 @@
 ﻿namespace TennisCorner.Data.Models
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     using TennisCorner.Common;
@@ -14,5 +15,7 @@
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.CountryNameStringLenght)]
         public string CountryName { get; set; }
+
+        public ICollection<Player> Players { get; set; } = new HashSet<Player>();
     }
 }

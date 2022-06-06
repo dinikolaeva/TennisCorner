@@ -2,6 +2,7 @@
 {
     using System.Reflection;
 
+    using CloudinaryDotNet;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -10,6 +11,7 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using TennisCorner.Common;
     using TennisCorner.Data;
     using TennisCorner.Data.Common;
     using TennisCorner.Data.Common.Repositories;
@@ -59,6 +61,13 @@
             services.AddScoped(typeof(IDeletableEntityRepository<>), typeof(EfDeletableEntityRepository<>));
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
+
+            // Cloudinary Setup
+            Cloudinary cloudinary = new Cloudinary(new Account(
+                GlobalConstants.CloudName, // this.configuration["Cloudinary:CloudName"],
+                apiKey: this.configuration["Cloudinary:ApiKey"],
+                apiSecret: this.configuration["Cloudinary:ApiSecret"]));
+            services.AddSingleton(cloudinary);
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();

@@ -1,6 +1,7 @@
 ﻿namespace TennisCorner.Data.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     using TennisCorner.Common;
@@ -25,5 +26,7 @@
         public int SurfaceId { get; set; }
 
         public Surface Surface { get; set; }
+
+        public ICollection<TournamentPlayingCategory> TournamentPlayingCategories { get; set; } = new HashSet<TournamentPlayingCategory>();
     }
 }

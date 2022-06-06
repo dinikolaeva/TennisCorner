@@ -1,6 +1,7 @@
 ﻿namespace TennisCorner.Data.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     using TennisCorner.Common;
@@ -20,6 +21,9 @@
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerGenderStringLenght)]
         public string Gender { get; set; }
 
+        [Required]
+        public string ImageUrl { get; set; }
+
         public int CountryId { get; set; }
 
         public Country Country { get; set; }
@@ -28,9 +32,9 @@
 
         public DateTime DateOfBirth { get; set; }
 
-        public int Height { get; set; }
+        public int? Height { get; set; }
 
-        public int Weight { get; set; }
+        public int? Weight { get; set; }
 
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerCoachStringLenght)]
@@ -40,6 +44,8 @@
 
         public int TotalPoints { get; set; }
 
-        public double PrizeMoney { get; set; }
+        public double TotalPrizeMoney { get; set; }
+
+        public ICollection<RegistrationPlayer> RegistrationsPlayers { get; set; } = new HashSet<RegistrationPlayer>();
     }
 }

@@ -4,7 +4,7 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
-<ul class="navbar-nav">
+<ul class="login">
     @if (this.SignInManager.IsSignedIn(this.User))
     {
         <li class="nav-item">
@@ -24,11 +24,13 @@
     }
     else
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <li class="login-modal">
+            <a class="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-user"></i>Login</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <li>
+            <div class="cart-option">
+                <a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-shopping-cart"></i>Register</a>
+            </div>
         </li>
     }
 </ul>

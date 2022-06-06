@@ -35,6 +35,16 @@
 
         public DbSet<TournamentPlayingCategory> TournamentPlayingCategories { get; set; }
 
+        public DbSet<Fixture> Fixtures { get; set; }
+
+        public DbSet<FixtureResult> FixtureResults { get; set; }
+
+        public DbSet<PlayingIn> PlayingIn { get; set; }
+
+        public DbSet<Registration> Registrations { get; set; }
+
+        public DbSet<RegistrationPlayer> RegistrationsPlayers { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
@@ -58,6 +68,9 @@
         {
             // Needed for Identity models configuration
             base.OnModelCreating(builder);
+
+            builder.Entity<FixtureResult>()
+            .HasKey(fr => new { fr.Id, fr.FixtureId });
 
             this.ConfigureUserIdentityRelations(builder);
 

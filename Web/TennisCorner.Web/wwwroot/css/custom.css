@@ -23,15 +23,15 @@ body {
 }
 
 .skyblue {
-    background-image: url('../images/main-slider-img1.jpg');
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1654511537/images/TennisCorner/main-slider-img1_m2ssqz.jpg');
 }
 
 .darkerskyblue {
-    background-image: url('../images/bg1.jpg');
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1654511536/images/TennisCorner/bg1_gdppbv.jpg');
 }
 
 .deepskyblue {
-    background-image: url('../images/b2.jpg');
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1654511531/images/TennisCorner/b2_autbtt.jpg');
 }
 
 .carousel-indicators {
