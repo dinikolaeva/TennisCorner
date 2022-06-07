@@ -6,6 +6,7 @@
 
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
+    using TennisCorner.Data.Seeding.CustomSeeder;
 
     public class ApplicationDbContextSeeder : ISeeder
     {
@@ -26,6 +27,9 @@
             var seeders = new List<ISeeder>
                           {
                               new RolesSeeder(),
+                              new CountrySeeder(),
+                              new SurfaceSeeder(),
+                              new PlayingCategorySeeder(),
                           };
 
             foreach (var seeder in seeders)
