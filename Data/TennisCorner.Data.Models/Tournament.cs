@@ -21,8 +21,6 @@
 
         public DateTime EndDate { get; set; }
 
-        public int NumberOfRounds { get; set; }
-
         public int SurfaceId { get; set; }
 
         public Surface Surface { get; set; }

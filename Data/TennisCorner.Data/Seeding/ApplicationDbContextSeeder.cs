@@ -27,9 +27,11 @@
             var seeders = new List<ISeeder>
                           {
                               new RolesSeeder(),
-                              new CountrySeeder(),
-                              new SurfaceSeeder(),
-                              new PlayingCategorySeeder(),
+                              new CountriesSeeder(),
+                              new SurfacesSeeder(),
+                              new PlayingCategoriesSeeder(),
+                              new TournamentsSeeder(),
+                              new TournamentPlayingCategoriesSeeder(),
                           };
 
             foreach (var seeder in seeders)

@@ -32,6 +32,10 @@
 
         public DateTime DateOfBirth { get; set; }
 
+        public int CareerWin { get; set; }
+
+        public int CareerLoss { get; set; }
+
         public int? Height { get; set; }
 
         public int? Weight { get; set; }
@@ -41,8 +45,6 @@
         public string Coach { get; set; }
 
         public int CurrentRank { get; set; }
-
-        public int TotalPoints { get; set; }
 
         public double TotalPrizeMoney { get; set; }
 
