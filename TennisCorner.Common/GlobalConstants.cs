@@ -54,6 +54,36 @@
             public const string Norrie = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654611003/images/TennisCorner/display_yjy3zn.jpg";
 
             public const string Sinner = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654611157/images/TennisCorner/display_l6ydqm.jpg";
+
+            public const string Hurkacz = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654629925/images/TennisCorner/display_s9u4jo.jpg";
+
+            public const string Fritz = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654630238/images/TennisCorner/display_todrjs.jpg";
+
+            public const string Schwartzman = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654630463/images/TennisCorner/display_pfemcd.jpg";
+
+            public const string Shapovalov = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654630658/images/TennisCorner/display_inrk5w.jpg";
+
+            public const string Cilic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654630873/images/TennisCorner/display_qqngwo.jpg";
+
+            public const string Opelka = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654630873/images/TennisCorner/display_qqngwo.jpg";
+
+            public const string Busta = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654631368/images/TennisCorner/display_ipidau.jpg";
+
+            public const string Agut = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654631745/images/TennisCorner/display_cyrdkg.jpg";
+
+            public const string Monfils = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654632456/images/TennisCorner/display_gc63d1.jpg";
+
+            public const string Rune = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654632456/images/TennisCorner/display_gc63d1.jpg";
+
+            public const string Fucsovics = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654633184/images/TennisCorner/display_tniof6.jpg";
+
+            public const string Khachanov = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654633184/images/TennisCorner/display_tniof6.jpg";
+
+            public const string Federer = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654633184/images/TennisCorner/display_tniof6.jpg";
+
+            public const string Harris = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654634520/images/TennisCorner/display_zbhtcy.jpg";
+
+            public const string Zandschulp = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654635004/images/TennisCorner/display_xrnppi.jpg";
         }
     }
 }

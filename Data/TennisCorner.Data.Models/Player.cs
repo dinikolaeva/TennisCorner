@@ -32,13 +32,15 @@
 
         public DateTime DateOfBirth { get; set; }
 
+        public int? Height { get; set; }
+
+        public int? Weight { get; set; }
+
         public int CareerWin { get; set; }
 
         public int CareerLoss { get; set; }
 
-        public int? Height { get; set; }
-
-        public int? Weight { get; set; }
+        public int TotalPoints { get; set; }
 
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerCoachStringLenght)]
