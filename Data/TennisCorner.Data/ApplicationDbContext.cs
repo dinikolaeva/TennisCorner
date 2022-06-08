@@ -1,6 +1,7 @@
 ﻿namespace TennisCorner.Data
 {
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using System.Reflection;
     using System.Threading;
@@ -71,6 +72,11 @@
 
             builder.Entity<FixtureResult>()
             .HasKey(fr => new { fr.Id, fr.FixtureId });
+
+            // Make compute property for Age column in Player table
+            builder.Entity<Player>()
+            .Property(nameof(Player.Age))
+            .HasComputedColumnSql($"DATEDIFF(yy, {nameof(Player.DateOfBirth)}, GETDATE()) - CASE WHEN (MONTH({nameof(Player.DateOfBirth)}) >= MONTH(GETDATE()))  AND DAY({nameof(Player.DateOfBirth)}) > DAY(GETDATE()) THEN 1 ELSE 0 END");
 
             this.ConfigureUserIdentityRelations(builder);
 

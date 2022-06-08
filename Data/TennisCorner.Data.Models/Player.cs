@@ -9,6 +9,9 @@
 
     public class Player : BaseDeletableModel<int>
     {
+        private const int Days = 365;
+        private int _age;
+
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerFirstNameStringLenght)]
         public string FirstName { get; set; }
@@ -28,9 +31,9 @@
 
         public Country Country { get; set; }
 
-        public int Age { get; set; }
-
         public DateTime DateOfBirth { get; set; }
+
+        public int Age { get; private set; }
 
         public int? Height { get; set; }
 
@@ -40,13 +43,13 @@
 
         public int CareerLoss { get; set; }
 
-        public int TotalPoints { get; set; }
+        public int? TotalPoints { get; set; }
 
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerCoachStringLenght)]
         public string Coach { get; set; }
 
-        public int CurrentRank { get; set; }
+        public int? CurrentRank { get; set; }
 
         public double TotalPrizeMoney { get; set; }
 

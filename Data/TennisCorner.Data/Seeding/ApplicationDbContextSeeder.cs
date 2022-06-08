@@ -32,6 +32,7 @@
                               new PlayingCategoriesSeeder(),
                               new TournamentsSeeder(),
                               new TournamentPlayingCategoriesSeeder(),
+                              new PlayersSeeder(),
                           };
 
             foreach (var seeder in seeders)

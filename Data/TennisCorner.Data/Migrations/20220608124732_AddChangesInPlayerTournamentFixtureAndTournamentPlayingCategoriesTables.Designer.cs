@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TennisCorner.Data;
 
@@ -11,9 +12,10 @@ using TennisCorner.Data;
 namespace TennisCorner.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220608124732_AddChangesInPlayerTournamentFixtureAndTournamentPlayingCategoriesTables")]
+    partial class AddChangesInPlayerTournamentFixtureAndTournamentPlayingCategoriesTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -384,11 +386,6 @@ namespace TennisCorner.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Age")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("int")
-                        .HasComputedColumnSql("DATEDIFF(yy, DateOfBirth, GETDATE()) - CASE WHEN (MONTH(DateOfBirth) >= MONTH(GETDATE()))  AND DAY(DateOfBirth) > DAY(GETDATE()) THEN 1 ELSE 0 END");
 
                     b.Property<int>("CareerLoss")
                         .HasColumnType("int");
