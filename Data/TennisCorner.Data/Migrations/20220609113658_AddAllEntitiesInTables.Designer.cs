@@ -12,8 +12,8 @@ using TennisCorner.Data;
 namespace TennisCorner.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220608201345_MakeComputePropertyInPlayersTable")]
-    partial class MakeComputePropertyInPlayersTable
+    [Migration("20220609113658_AddAllEntitiesInTables")]
+    partial class AddAllEntitiesInTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -287,98 +287,6 @@ namespace TennisCorner.Data.Migrations
                     b.ToTable("Countries");
                 });
 
-            modelBuilder.Entity("TennisCorner.Data.Models.Fixture", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("FirstRegistrationId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("RegistrationId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Round")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<int>("SecondRegistrationId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TournamentPlayingCategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("RegistrationId");
-
-                    b.HasIndex("TournamentPlayingCategoryId");
-
-                    b.ToTable("Fixtures");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.FixtureResult", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("FixtureId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("IsOpponentRetired")
-                        .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("NumberOfSetsPlayed")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("RegistrationId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WinnerRegistrationId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id", "FixtureId");
-
-                    b.HasIndex("FixtureId");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("RegistrationId");
-
-                    b.ToTable("FixtureResults");
-                });
-
             modelBuilder.Entity("TennisCorner.Data.Models.Player", b =>
                 {
                     b.Property<int>("Id")
@@ -496,123 +404,6 @@ namespace TennisCorner.Data.Migrations
                     b.ToTable("PlayingCategories");
                 });
 
-            modelBuilder.Entity("TennisCorner.Data.Models.PlayingIn", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("RegistrationId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Seed")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TournamentPlayingCategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("RegistrationId");
-
-                    b.HasIndex("TournamentPlayingCategoryId");
-
-                    b.ToTable("PlayingIn");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.Registration", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PlayerId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PlayingInId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RegistrationDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("PlayerId");
-
-                    b.HasIndex("PlayingInId");
-
-                    b.ToTable("Registrations");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.RegistrationPlayer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PlayerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RegistrationId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("PlayerId");
-
-                    b.HasIndex("RegistrationId");
-
-                    b.ToTable("RegistrationsPlayers");
-                });
-
             modelBuilder.Entity("TennisCorner.Data.Models.Surface", b =>
                 {
                     b.Property<int>("Id")
@@ -693,41 +484,19 @@ namespace TennisCorner.Data.Migrations
                     b.ToTable("Tournaments");
                 });
 
-            modelBuilder.Entity("TennisCorner.Data.Models.TournamentPlayingCategory", b =>
+            modelBuilder.Entity("TennisCorner.Data.Models.TournamentPlayer", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PlayingCategoryId")
-                        .HasColumnType("int");
-
                     b.Property<int>("TournamentId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<int>("PlayerId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("IsDeleted");
+                    b.HasKey("TournamentId", "PlayerId");
 
-                    b.HasIndex("PlayingCategoryId");
+                    b.HasIndex("PlayerId");
 
-                    b.HasIndex("TournamentId");
-
-                    b.ToTable("TournamentPlayingCategories");
+                    b.ToTable("TournamentsPlayers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -781,40 +550,6 @@ namespace TennisCorner.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TennisCorner.Data.Models.Fixture", b =>
-                {
-                    b.HasOne("TennisCorner.Data.Models.Registration", "Registration")
-                        .WithMany()
-                        .HasForeignKey("RegistrationId");
-
-                    b.HasOne("TennisCorner.Data.Models.TournamentPlayingCategory", "TournamentPlayingCategory")
-                        .WithMany()
-                        .HasForeignKey("TournamentPlayingCategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Registration");
-
-                    b.Navigation("TournamentPlayingCategory");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.FixtureResult", b =>
-                {
-                    b.HasOne("TennisCorner.Data.Models.Fixture", "Fixture")
-                        .WithMany()
-                        .HasForeignKey("FixtureId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("TennisCorner.Data.Models.Registration", "Registration")
-                        .WithMany()
-                        .HasForeignKey("RegistrationId");
-
-                    b.Navigation("Fixture");
-
-                    b.Navigation("Registration");
-                });
-
             modelBuilder.Entity("TennisCorner.Data.Models.Player", b =>
                 {
                     b.HasOne("TennisCorner.Data.Models.Country", "Country")
@@ -824,59 +559,6 @@ namespace TennisCorner.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Country");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.PlayingIn", b =>
-                {
-                    b.HasOne("TennisCorner.Data.Models.Registration", "Registration")
-                        .WithMany()
-                        .HasForeignKey("RegistrationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("TennisCorner.Data.Models.TournamentPlayingCategory", "TournamentPlayingCategory")
-                        .WithMany()
-                        .HasForeignKey("TournamentPlayingCategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Registration");
-
-                    b.Navigation("TournamentPlayingCategory");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.Registration", b =>
-                {
-                    b.HasOne("TennisCorner.Data.Models.Player", "Player")
-                        .WithMany()
-                        .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("TennisCorner.Data.Models.PlayingIn", null)
-                        .WithMany("Registrations")
-                        .HasForeignKey("PlayingInId");
-
-                    b.Navigation("Player");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.RegistrationPlayer", b =>
-                {
-                    b.HasOne("TennisCorner.Data.Models.Player", "Player")
-                        .WithMany("RegistrationsPlayers")
-                        .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("TennisCorner.Data.Models.Registration", "Registration")
-                        .WithMany()
-                        .HasForeignKey("RegistrationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Player");
-
-                    b.Navigation("Registration");
                 });
 
             modelBuilder.Entity("TennisCorner.Data.Models.Tournament", b =>
@@ -890,21 +572,21 @@ namespace TennisCorner.Data.Migrations
                     b.Navigation("Surface");
                 });
 
-            modelBuilder.Entity("TennisCorner.Data.Models.TournamentPlayingCategory", b =>
+            modelBuilder.Entity("TennisCorner.Data.Models.TournamentPlayer", b =>
                 {
-                    b.HasOne("TennisCorner.Data.Models.PlayingCategory", "PlayingCategory")
-                        .WithMany("TournamentPlayingCategories")
-                        .HasForeignKey("PlayingCategoryId")
+                    b.HasOne("TennisCorner.Data.Models.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("TennisCorner.Data.Models.Tournament", "Tournament")
-                        .WithMany("TournamentPlayingCategories")
+                        .WithMany()
                         .HasForeignKey("TournamentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("PlayingCategory");
+                    b.Navigation("Player");
 
                     b.Navigation("Tournament");
                 });
@@ -921,26 +603,6 @@ namespace TennisCorner.Data.Migrations
             modelBuilder.Entity("TennisCorner.Data.Models.Country", b =>
                 {
                     b.Navigation("Players");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.Player", b =>
-                {
-                    b.Navigation("RegistrationsPlayers");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.PlayingCategory", b =>
-                {
-                    b.Navigation("TournamentPlayingCategories");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.PlayingIn", b =>
-                {
-                    b.Navigation("Registrations");
-                });
-
-            modelBuilder.Entity("TennisCorner.Data.Models.Tournament", b =>
-                {
-                    b.Navigation("TournamentPlayingCategories");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,7 +1,5 @@
 ﻿namespace TennisCorner.Data.Models
 {
-    using System.Collections.Generic;
-
     using TennisCorner.Data.Common.Models;
 
     public class TournamentPlayingCategory : BaseDeletableModel<int>

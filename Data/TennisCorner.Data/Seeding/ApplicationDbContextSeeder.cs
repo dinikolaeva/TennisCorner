@@ -31,8 +31,8 @@
                               new SurfacesSeeder(),
                               new PlayingCategoriesSeeder(),
                               new TournamentsSeeder(),
-                              new TournamentPlayingCategoriesSeeder(),
                               new PlayersSeeder(),
+                              new TournamentsPlayersSeeder(),
                           };
 
             foreach (var seeder in seeders)

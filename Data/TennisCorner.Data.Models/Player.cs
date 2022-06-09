@@ -9,9 +9,6 @@
 
     public class Player : BaseDeletableModel<int>
     {
-        private const int Days = 365;
-        private int _age;
-
         [Required]
         [MaxLength(GlobalConstants.StringLengthValidations.PlayerFirstNameStringLenght)]
         public string FirstName { get; set; }
@@ -52,7 +49,5 @@
         public int? CurrentRank { get; set; }
 
         public double TotalPrizeMoney { get; set; }
-
-        public ICollection<RegistrationPlayer> RegistrationsPlayers { get; set; } = new HashSet<RegistrationPlayer>();
     }
 }

@@ -24,7 +24,5 @@
         public int SurfaceId { get; set; }
 
         public Surface Surface { get; set; }
-
-        public ICollection<TournamentPlayingCategory> TournamentPlayingCategories { get; set; } = new HashSet<TournamentPlayingCategory>();
     }
 }

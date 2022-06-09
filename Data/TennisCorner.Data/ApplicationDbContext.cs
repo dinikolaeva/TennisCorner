@@ -1,7 +1,6 @@
 ﻿namespace TennisCorner.Data
 {
     using System;
-    using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using System.Reflection;
     using System.Threading;
@@ -34,17 +33,9 @@
 
         public DbSet<Tournament> Tournaments { get; set; }
 
+        public DbSet<TournamentPlayer> TournamentsPlayers { get; set; }
+
         public DbSet<TournamentPlayingCategory> TournamentPlayingCategories { get; set; }
-
-        public DbSet<Fixture> Fixtures { get; set; }
-
-        public DbSet<FixtureResult> FixtureResults { get; set; }
-
-        public DbSet<PlayingIn> PlayingIn { get; set; }
-
-        public DbSet<Registration> Registrations { get; set; }
-
-        public DbSet<RegistrationPlayer> RegistrationsPlayers { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 
@@ -70,8 +61,8 @@
             // Needed for Identity models configuration
             base.OnModelCreating(builder);
 
-            builder.Entity<FixtureResult>()
-            .HasKey(fr => new { fr.Id, fr.FixtureId });
+            builder.Entity<TournamentPlayer>()
+            .HasKey(tp => new { tp.TournamentId, tp.PlayerId });
 
             // Make compute property for Age column in Player table
             builder.Entity<Player>()

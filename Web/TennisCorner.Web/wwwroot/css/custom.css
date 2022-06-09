@@ -108,7 +108,7 @@ h1 {
     text-shadow: none;
     color: #fff;
     text-align: left;
-    line-height: 52px;
+    line-height: 60px;
     letter-spacing: -2px;
 }
 
@@ -371,6 +371,7 @@ header {
 
 .main-menu-section .navbar.navbar-inverse .navbar-collapse ul.nav.navbar-nav li.active a, .main-menu-section .navbar.navbar-inverse .navbar-collapse ul.nav.navbar-nav li a:hover, .main-menu-section .navbar.navbar-inverse .navbar-collapse ul.nav.navbar-nav li a:focus {
     border-color: #d8302f;
+    color: #9acd32;
 }
 
 .main-menu-section .navbar.navbar-inverse .navbar-collapse ul.nav.navbar-nav li a span.caret {
@@ -1122,6 +1123,7 @@ section.main-heading {
         margin-bottom: 15px;
         font-weight: 300;
         font-size: 14px;
+        color: #9acd32;
     }
 
 .footer-bottom {
@@ -1634,6 +1636,7 @@ button.button {
 .footer-logo img {
     width: 180px;
     padding-top: 10px;
+    padding-left: 50px;
 }
 
 .feature-post {
