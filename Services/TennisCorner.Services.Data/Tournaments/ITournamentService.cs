@@ -1,9 +1,12 @@
 ﻿namespace TennisCorner.Services.Data.Tournaments
 {
+    using System.Collections.Generic;
     using System.Threading.Tasks;
+
+    using TennisCorner.Web.ViewModels.Tournaments;
 
     public interface ITournamentService
     {
-        Task<T> GetTournamentByIdAsync<T>(int id);
+        Task<IEnumerable<T>> GetAllTournamentsAsync<T>();
     }
 }

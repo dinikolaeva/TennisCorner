@@ -17,6 +17,21 @@
         [MaxLength(GlobalConstants.StringLengthValidations.LocationStringLenght)]
         public string Location { get; set; }
 
+        [Required]
+        public string TournamentImageUrl { get; set; }
+
+        [Required]
+        public string ManWinnerImageUrl { get; set; }
+
+        [Required]
+        public string WomanWinnerImageUrl { get; set; }
+
+        [Required]
+        public string FinalsSchemaManImageUrl { get; set; }
+
+        [Required]
+        public string FinalsSchemaWomenImageUrl { get; set; }
+
         public DateTime StartDate { get; set; }
 
         public DateTime EndDate { get; set; }

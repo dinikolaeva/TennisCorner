@@ -31,6 +31,67 @@
 
             public const string Logo = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654511536/images/TennisCorner/logo_olch1f.png";
 
+            // Tournaments
+            public const string AustraliaOpen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803529/images/TennisCorner/australianopen-cropped_australianopen_cropped_3s6xqnxg3lf01c650sj2r7yyt_jtkefm.jpg";
+
+            public const string WinnerNadal = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803696/images/TennisCorner/83hop44s_rafael-nadal-_625x300_30_January_22_jmtcjc.webp";
+
+            public const string WinnerBarty = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803773/images/TennisCorner/14588764e53f4c3db3710bf9edecaf03_gyr7kq.jpg";
+
+            public const string AOSchemaMan2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804215/images/TennisCorner/screencapture-itftennis-en-tournament-australian-open-aus-2022-m-sl-aus-01a-2022-draws-and-results-2022-06-09-22_49_08_uuaoet.png";
+
+            public const string AOSchemaWomen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804366/images/TennisCorner/screencapture-itftennis-en-tournament-australian-open-aus-2022-w-sl-aus-01a-2022-draws-and-results-2022-06-09-22_51_43_zweapr.png";
+
+            public const string RolandGarros2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804591/images/TennisCorner/da0a32f0189dd009c132127fbdc577ef_qtwxmq.jpg";
+
+            public const string WinnerNadalRG = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804681/images/TennisCorner/gettyimages-1401181669_vluzfo.jpg";
+
+            public const string WinnerSwiatek = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804893/images/TennisCorner/thumbs_b_c_5cd3cef25d2f29f0926bab5d15baf124_f0cxjh.jpg";
+
+            public const string RGSchemaMan2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805044/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2022-m-sl-fra-01a-2022-draws-and-results-2022-06-09-23_02_58_liyrjn.png";
+
+            public const string RGSchemaWomen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805199/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2022-w-sl-fra-01a-2022-draws-and-results-2022-06-09-23_05_18_kvxhan.png";
+
+            public const string AustralianOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805642/images/TennisCorner/a094af390a622b5265f9061fcd47d3ba_prr8zv.jpg";
+
+            public const string WinnerDjokovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805735/images/TennisCorner/Novak-Djokovic-4_ptnyfu.jpg";
+
+            public const string WinnerOsaka = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805837/images/TennisCorner/hi-res-c5cfe43a2bf270534e575648b6e55bfe_crop_north-1568x1045_avporw.webp";
+
+            public const string AOSchemaMan2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806090/images/TennisCorner/screencapture-itftennis-en-tournament-australian-open-aus-2021-m-sl-aus-01a-2021-draws-and-results-2022-06-09-23_20_35_gmh4kh.png";
+
+            public const string AOSchemaWomen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805989/images/TennisCorner/screencapture-itftennis-en-tournament-australian-open-aus-2021-w-sl-aus-01a-2021-draws-and-results-2022-06-09-23_18_50_qpq9uk.png";
+
+            public const string RolandGarros2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806392/images/TennisCorner/French-Open-Preview-2021-1_fd5tpe.jpg";
+
+            public const string WinnerRGDjokovic2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806476/images/TennisCorner/160304-kxoapjbrwi-1623632048_rrpx6t.jpg";
+
+            public const string WinnerKrejcikova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806554/images/TennisCorner/121431_m81a9x.jpg";
+
+            public const string RGSchemaMan2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806777/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2021-m-sl-fra-01a-2021-draws-and-results-2022-06-09-23_32_21_wuhpsb.png";
+
+            public const string RGSchemaWoman2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806993/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2021-w-sl-fra-01a-2021-draws-and-results-2022-06-09-23_35_51_ebkokt.png";
+
+            public const string Wimbledon2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807079/images/TennisCorner/s_TL107421-76480-1623833362428_mq4hs6.jpg";
+
+            public const string WinnerWimbledonDjokovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807289/images/TennisCorner/djokovic_saj7oc.jpg";
+
+            public const string WinnerWimbledonBarty = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807360/images/TennisCorner/4D7GY2OMPRLY5GAWL2QGW4KTRE_ly54vv.jpg";
+
+            public const string WimbledonSchemaMan2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807549/images/TennisCorner/screencapture-itftennis-en-tournament-wimbledon-gbr-2021-m-sl-gbr-01a-2021-draws-and-results-2022-06-09-23_45_10_ztqos3.png";
+
+            public const string WimbledonSchemaWoman2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807626/images/TennisCorner/screencapture-itftennis-en-tournament-wimbledon-gbr-2021-w-sl-gbr-01a-2021-draws-and-results-2022-06-09-23_46_24_rrpj4d.png";
+
+            public const string USOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807906/images/TennisCorner/11tennis-usopen-1-videoSixteenByNineJumbo1600_x6eiyl.jpg";
+
+            public const string WinnerMedvedev = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807995/images/TennisCorner/Vb9T6Dw1tI5n_b0L6ty0Ei2q8_1440x960_xca8cd.jpg";
+
+            public const string WinnerRadukanu = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654808101/images/TennisCorner/emma_pf6pcs.jpg";
+
+            public const string USOpenSchemaMan2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654808230/images/TennisCorner/screencapture-itftennis-en-tournament-us-open-usa-2021-m-sl-usa-01a-2021-draws-and-results-2022-06-09-23_56_27_vsiddf.png";
+
+            public const string USOpenSchemaWoman2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654808387/images/TennisCorner/screencapture-itftennis-en-tournament-us-open-usa-2021-w-sl-usa-01a-2021-draws-and-results-2022-06-09-23_57_52_xr25oe.png";
+
             // Players
             // Man
             public const string Djokovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654606304/images/TennisCorner/display_vzoulw.jpg";

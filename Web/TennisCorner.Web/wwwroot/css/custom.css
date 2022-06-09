@@ -130,9 +130,14 @@ h1 {
     line-height: 24px;
 }
 
+#buttonCenter {
+    padding-top: 110px;
+    color: white !important;
+}
+
 .btn.btn-primary.btn-lg {
     float: left;
-    background: #1c72ce;
+    background: #9acd32;
     font-size: 15px;
     text-transform: uppercase;
     min-width: 160px;
@@ -141,7 +146,8 @@ h1 {
 }
 
     .btn.btn-primary.btn-lg:hover, .btn.btn-primary.btn-lg:focus {
-        background: #d8302f;
+        background: #fff;
+        color: black;
     }
 
 #carousel-example-generic .carousel-caption {

@@ -21,6 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\TennisCorner.Data.Common\TennisCorner.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\TennisCorner.Data.Models\TennisCorner.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\TennisCorner.Data\TennisCorner.Data.csproj" />
+    <ProjectReference Include="..\..\Web\TennisCorner.Web.ViewModels\TennisCorner.Web.ViewModels.csproj" />
     <ProjectReference Include="..\TennisCorner.Services.Mapping\TennisCorner.Services.Mapping.csproj" />
   </ItemGroup>
 
