@@ -7,6 +7,8 @@
 
     public interface ITournamentService
     {
-        Task<IEnumerable<T>> GetAllTournamentsAsync<T>();
+        Task<IEnumerable<T>> GetAllTournamentsByYearAsync<T>(int year);
+
+        Task<T> GetTournamentByIdAsync<T>(int id);
     }
 }

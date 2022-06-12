@@ -1154,8 +1154,8 @@ section.main-heading {
 .inner-page-banner {
     float: left;
     width: 100%;
-    min-height: 500px;
-    background-image: url('../images/about.png');
+    min-height: 400px;
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1654854151/images/TennisCorner/20180419_Where-would-it-be-best-to-see-tennis_s-greats--This-is-the-most-affordable-Grand-Slam_lpzexi.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1191,6 +1191,17 @@ section.main-heading {
             display: block;
         }
 
+.banner-top {
+    float: left;
+    width: 100%;
+    min-height: 400px;
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1654860708/images/TennisCorner/1_fuzk6r.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .breadcrumb {
     padding: 11px 0;
     margin-bottom: 0;
@@ -1200,6 +1211,7 @@ section.main-heading {
     border: none;
     color: #fff;
     float: right;
+    padding-right: 50px;
 }
 
     .breadcrumb li {
@@ -1211,7 +1223,7 @@ section.main-heading {
         }
 
     .breadcrumb > .active {
-        color: #d8302f;
+        color: #9acd32;
     }
 
 .inner-information-text {

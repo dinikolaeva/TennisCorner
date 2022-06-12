@@ -13,8 +13,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="" type="~/image/x-icon" />
-    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="" type="~/image/x-icon" asp-append-version="true" />
+    <link rel="apple-touch-icon" href="" asp-append-version="true">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
     <!-- Site CSS -->
@@ -28,14 +28,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/custom.css">
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" asp-append-version="true">
     <!-- end font family -->
     <!-- FontAwsome -->
     <script src="https://kit.fontawesome.com/962e3b47ab.js" crossorigin="anonymous"></script>
     <!-- End FontAwsome -->
     <link rel="stylesheet" href="~/css/3dslider.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="~/text/css">
+    <link rel="stylesheet" type="~/text/css" href="https://www.jqueryscript.net/css/jquerysctipttop.css" asp-append-version="true">
     <script src="~/js/3dslider.js"></script>
 </head>
 <body class="game_info" data-spy="scroll" data-target=".header">
@@ -46,10 +46,13 @@
         <header>
             <partial name="_HeaderPartial.cshtml">
         </header>
+    </section>
+    @if (this.ViewData["Title"].ToString() == "Home Page")
+    {
         <div class="full-slider">
             <partial name="_HomeBannerPartial.cshtml" />
         </div>
-    </section>
+    }
 
     <div class="container">
         <partial name="_CookieConsentPartial" />
@@ -62,11 +65,11 @@
         <partial name="_FooterPartial.cshtml" />
     </footer>
 
-    @await this.RenderSectionAsync("Scripts", required: false)
     <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src="~/js/all.js"></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+    <script src="~/js/custom.js"></script>
 
+    @await this.RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

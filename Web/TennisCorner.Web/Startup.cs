@@ -18,6 +18,8 @@
     using TennisCorner.Data.Models;
     using TennisCorner.Data.Repositories;
     using TennisCorner.Data.Seeding;
+    using TennisCorner.Services.Cloudinary;
+    using TennisCorner.Services.Data.Tournaments;
     using TennisCorner.Services.Mapping;
     using TennisCorner.Services.Messaging;
     using TennisCorner.Web.ViewModels;
@@ -71,6 +73,9 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
+            services.AddTransient<ICloudinaryService, CloudinaryService>();
+            services.AddTransient<ITournamentService, TournamentService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,11 +93,13 @@
 
             if (env.IsDevelopment())
             {
+                app.UseStatusCodePagesWithReExecute("/Home/Error/{0}");
                 app.UseDeveloperExceptionPage();
                 app.UseMigrationsEndPoint();
             }
             else
             {
+                app.UseStatusCodePagesWithReExecute("/Home/Error/{0}");
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }

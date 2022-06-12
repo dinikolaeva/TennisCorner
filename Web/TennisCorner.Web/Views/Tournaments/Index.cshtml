@@ -1,0 +1,50 @@
+﻿@using System.Globalization
+@using TennisCorner.Web.ViewModels.Tournaments
+@model TournamentListViewModel
+@{
+    this.ViewData["Title"] = "Tournaments";
+}
+
+<div class="inner-page-banner">
+    <div class="container">
+    </div>
+</div>
+<div class="inner-information-text">
+    <div class="container">
+        <h3>Tournaments</h3>
+        <ul class="breadcrumb">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="active">Tournaments</li>
+        </ul>
+    </div>
+</div>
+
+<section id="contant" class="contant main-heading team">
+    <div class="row">
+        <div class="container">
+            @foreach (var tournament in Model.Tournaments)
+            {
+                <div class="col-md-3 column">
+                    <div class="card">
+                        <img class="img-responsive" src=@tournament.TournamentImageUrl style="width:100%">
+                        <div class="">
+                            <h4>@tournament.TournamentName</h4>
+                            <p class="title">@tournament.Location</p>
+                            <p class="title">@tournament.StartDate.ToString("dd MMM yyyy", CultureInfo.InvariantCulture) - @tournament.EndDate.ToString("dd MMM yyyy", CultureInfo.InvariantCulture)</p>
+                            <p class="title">@tournament.Surface.SurfaceType</p>
+                            <p>
+                                <div class="center">
+                                    <button class="button">
+                                        <a asp-area="" asp-controller="Tournaments" asp-action="Details" asp-route-id="@tournament.Id">
+                                            Details
+                                        </a>
+                                    </button>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

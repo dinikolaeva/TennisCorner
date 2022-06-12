@@ -31,6 +31,8 @@
 
             public const string Logo = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654511536/images/TennisCorner/logo_olch1f.png";
 
+            public const string Error404 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654861331/images/TennisCorner/error-404-with-the-cute-tennis-ball-mascot-free-vector_k4knmo.jpg";
+
             // Tournaments
             public const string AustraliaOpen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803529/images/TennisCorner/australianopen-cropped_australianopen_cropped_3s6xqnxg3lf01c650sj2r7yyt_jtkefm.jpg";
 
