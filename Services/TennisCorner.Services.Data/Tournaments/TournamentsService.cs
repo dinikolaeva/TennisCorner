@@ -9,11 +9,11 @@
     using TennisCorner.Data.Models;
     using TennisCorner.Services.Mapping;
 
-    public class TournamentService : ITournamentService
+    public class TournamentsService : ITournamentsService
     {
         private readonly IDeletableEntityRepository<Tournament> tournamentRepository;
 
-        public TournamentService(IDeletableEntityRepository<Tournament> tournamentRepository)
+        public TournamentsService(IDeletableEntityRepository<Tournament> tournamentRepository)
         {
             this.tournamentRepository = tournamentRepository;
         }

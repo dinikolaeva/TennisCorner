@@ -1,0 +1,68 @@
+﻿@using TennisCorner.Common
+@{
+    this.ViewData["Title"] = "Players";
+}
+
+<div class="inner-page-banner">
+    <div class="container">
+    </div>
+</div>
+<div class="inner-information-text">
+    <div class="container">
+        <h3>Players</h3>
+        <ul class="breadcrumb">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="active">Players</li>
+        </ul>
+    </div>
+</div>
+
+<secion>
+    <div class="matchs-info">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="full">
+                    <div class="matchs-vs">
+                        <div class="vs-team">
+                            <div class="team-btw-match">
+                                <img class="img-responsive" src=@GlobalConstants.Images.Mens style="width:91%">
+                                <div class="btn btn-primary btn-lg">
+                                    <a asp-area="" asp-controller="Players" asp-action="ManSingle" asp-route-player="M">Men's Single</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matchs-info">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="full">
+                        <div class="matchs-vs">
+                            <div class="vs-team">
+                                <div class="team-btw-match">
+                                    <img class="img-responsive" src=@GlobalConstants.Images.Womens style="width:90%">
+                                    <div class="btn btn-primary btn-lg">
+                                        <a asp-area="" asp-controller="Players" asp-action="WomenSingle" asp-route-player="W">Women's Single</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+            <div class="full">
+            <div class="right-match-time">
+            <div class="btn btn-primary btn-lg">
+            <a asp-area="" asp-controller="Players" asp-action="WomenSingle" asp-route-player="W">Women's Single</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>*@
+    </div>
+</secion>

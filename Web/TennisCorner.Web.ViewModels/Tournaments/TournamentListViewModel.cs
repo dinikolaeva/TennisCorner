@@ -7,6 +7,6 @@
 
     public class TournamentListViewModel
     {
-        public IEnumerable<TournamentViewModel> Tournaments { get; set; }
+        public IEnumerable<TournamentSimpleViewModel> Tournaments { get; set; }
     }
 }

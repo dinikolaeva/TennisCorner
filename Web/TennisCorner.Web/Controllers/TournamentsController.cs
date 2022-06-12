@@ -9,9 +9,9 @@
 
     public class TournamentsController : BaseController
     {
-        private readonly ITournamentService tournamentService;
+        private readonly ITournamentsService tournamentService;
 
-        public TournamentsController(ITournamentService tournamentService)
+        public TournamentsController(ITournamentsService tournamentService)
         {
             this.tournamentService = tournamentService;
         }
@@ -20,7 +20,8 @@
         {
             var viewModel = new TournamentListViewModel
             {
-                Tournaments = await this.tournamentService.GetAllTournamentsByYearAsync<TournamentViewModel>(year),
+                Tournaments = await this.tournamentService
+                                        .GetAllTournamentsByYearAsync<TournamentSimpleViewModel>(year),
             };
 
             if (!viewModel.Tournaments.Any())
@@ -41,7 +42,7 @@
                 return new StatusCodeResult(404);
             }
 
-            return this.View(new TournamentViewModel());
+            return this.View(viewModel);
         }
     }
 }

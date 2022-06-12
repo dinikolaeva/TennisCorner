@@ -5,7 +5,7 @@
 
     using TennisCorner.Web.ViewModels.Tournaments;
 
-    public interface ITournamentService
+    public interface ITournamentsService
     {
         Task<IEnumerable<T>> GetAllTournamentsByYearAsync<T>(int year);
 

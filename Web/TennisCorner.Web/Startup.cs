@@ -19,6 +19,7 @@
     using TennisCorner.Data.Repositories;
     using TennisCorner.Data.Seeding;
     using TennisCorner.Services.Cloudinary;
+    using TennisCorner.Services.Data.Players;
     using TennisCorner.Services.Data.Tournaments;
     using TennisCorner.Services.Mapping;
     using TennisCorner.Services.Messaging;
@@ -74,7 +75,8 @@
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ICloudinaryService, CloudinaryService>();
-            services.AddTransient<ITournamentService, TournamentService>();
+            services.AddTransient<ITournamentsService, TournamentsService>();
+            services.AddTransient<IPlayersService, PlayersService>();
 
         }
 

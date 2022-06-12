@@ -33,6 +33,10 @@
 
             public const string Error404 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654861331/images/TennisCorner/error-404-with-the-cute-tennis-ball-mascot-free-vector_k4knmo.jpg";
 
+            public const string Mens = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655037155/images/TennisCorner/10-5-atp-tour-talent-16_9_mplydh.webp";
+
+            public const string Womens = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655039746/images/TennisCorner/Team_Celebration_Huddle_Header_odvvb9.jpg";
+
             // Tournaments
             public const string AustraliaOpen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803529/images/TennisCorner/australianopen-cropped_australianopen_cropped_3s6xqnxg3lf01c650sj2r7yyt_jtkefm.jpg";
 
