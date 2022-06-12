@@ -8,14 +8,7 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Site Metas -->
-    @if (this.ViewData["Title"].ToString() == "Home Page")
-    {
-        <title>@GlobalConstants.SystemName</title>
-    }
-    else
-    {
-        <title>@this.ViewData["Title"]</title>
-    }
+    <title>@GlobalConstants.SystemName</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -54,12 +47,16 @@
             <partial name="_HeaderPartial.cshtml">
         </header>
     </section>
-    @if (this.ViewData["Title"].ToString() == "Home Page")
+
+    @if (IsSectionDefined("HomeBannerPartial"))
+
     {
         <div class="full-slider">
-            <partial name="_HomeBannerPartial.cshtml" />
+        @RenderSection("HomeBannerPartial")
         </div>
     }
+
+
 
     <div class="container">
         <partial name="_CookieConsentPartial" />

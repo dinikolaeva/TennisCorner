@@ -9,19 +9,19 @@
 
     public class TournamentsController : BaseController
     {
-        private readonly ITournamentsService tournamentService;
+        private readonly ITournamentsService tournamentsService;
 
-        public TournamentsController(ITournamentsService tournamentService)
+        public TournamentsController(ITournamentsService tournamentsService)
         {
-            this.tournamentService = tournamentService;
+            this.tournamentsService = tournamentsService;
         }
 
         public async Task<IActionResult> Index(int year)
         {
             var viewModel = new TournamentListViewModel
             {
-                Tournaments = await this.tournamentService
-                                        .GetAllTournamentsByYearAsync<TournamentSimpleViewModel>(year),
+                Tournaments = await this.tournamentsService
+                                        .GetAllTournamentsByYearAsync<TournamentViewModel>(year),
             };
 
             if (!viewModel.Tournaments.Any())
@@ -34,7 +34,7 @@
 
         public async Task<IActionResult> Details(int id)
         {
-            var viewModel = await this.tournamentService
+            var viewModel = await this.tournamentsService
                                       .GetTournamentByIdAsync<TournamentViewModel>(id);
 
             if (viewModel == null)
