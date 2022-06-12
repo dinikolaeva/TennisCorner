@@ -14,5 +14,9 @@
         public string ImageUrl { get; set; }
 
         public int? CurrentRank { get; set; }
+
+        public int CountryId { get; set; }
+
+        public Country Country { get; set; }
     }
 }

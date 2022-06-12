@@ -21,15 +21,27 @@
             return this.View();
         }
 
-        public async Task<IActionResult> ManSingle(string input)
+        public async Task<IActionResult> MensSingle()
         {
             var viewModel = new PlayersListViewModel
             {
                 Players = await this.playersService
-                                        .GetAllPlayersByGenderAsync<PlayerSimpleViewModel>(input),
+                                        .GetAllMalePlayersByGenderAsync<PlayerSimpleViewModel>(),
             };
 
             if (!viewModel.Players.Any())
+            {
+                return new StatusCodeResult(404);
+            }
+
+            return this.View(viewModel);
+        }
+
+        public async Task<IActionResult> MensDetails(int id)
+        {
+            var viewModel = await this.playersService.GetPlayerByIdAsync<PlayerViewModel>(id);
+
+            if (viewModel == null)
             {
                 return new StatusCodeResult(404);
             }

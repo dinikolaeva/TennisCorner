@@ -5,6 +5,8 @@
 
     public interface IPlayersService
     {
-        Task<IEnumerable<T>> GetAllPlayersByGenderAsync<T>(string player);
+        Task<IEnumerable<T>> GetAllMalePlayersByGenderAsync<T>();
+
+        Task<T> GetPlayerByIdAsync<T>(int id);
     }
 }

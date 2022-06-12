@@ -1,27 +1,20 @@
-﻿namespace TennisCorner.Data.Models
+﻿namespace TennisCorner.Web.ViewModels.Players
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
 
-    using TennisCorner.Common;
-    using TennisCorner.Data.Common.Models;
+    using TennisCorner.Data.Models;
+    using TennisCorner.Services.Mapping;
 
-    public class Player : BaseDeletableModel<int>
+    public class PlayerViewModel : IMapFrom<Player>
     {
-        [Required]
-        [MaxLength(GlobalConstants.StringLengthValidations.PlayerFirstNameStringLenght)]
+        public int Id { get; set; }
+
         public string FirstName { get; set; }
 
-        [Required]
-        [MaxLength(GlobalConstants.StringLengthValidations.PlayerLastNameStringLenght)]
         public string LastName { get; set; }
 
-        [Required]
-        [MaxLength(GlobalConstants.StringLengthValidations.PlayerGenderStringLenght)]
         public string Gender { get; set; }
 
-        [Required]
         public string ImageUrl { get; set; }
 
         public int CountryId { get; set; }

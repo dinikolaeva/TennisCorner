@@ -25,10 +25,8 @@
                     <div class="matchs-vs">
                         <div class="vs-team">
                             <div class="team-btw-match">
-                                <img class="img-responsive" src=@GlobalConstants.Images.Mens style="width:91%">
-                                <div class="btn btn-primary btn-lg">
-                                    <a asp-area="" asp-controller="Players" asp-action="ManSingle" asp-route-player="M">Men's Single</a>
-                                </div>
+                                <img class="img-responsive img-Players" src=@GlobalConstants.Images.Mens>
+                                <a class="btn btn-block btn-Players" asp-area="" asp-controller="Players" asp-action="MensSingle">Men's Single</a>
                             </div>
                         </div>
                     </div>
@@ -42,10 +40,8 @@
                         <div class="matchs-vs">
                             <div class="vs-team">
                                 <div class="team-btw-match">
-                                    <img class="img-responsive" src=@GlobalConstants.Images.Womens style="width:90%">
-                                    <div class="btn btn-primary btn-lg">
-                                        <a asp-area="" asp-controller="Players" asp-action="WomenSingle" asp-route-player="W">Women's Single</a>
-                                    </div>
+                                    <img class="img-responsive  img-Players" src=@GlobalConstants.Images.Womens>
+                                    <a class="btn btn-block btn-Players" asp-area="" asp-controller="Players" asp-action="WomenSingle">Women's Single</a>
                                 </div>
                             </div>
                         </div>
@@ -53,16 +49,5 @@
                 </div>
             </div>
         </div>
-        @*<div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="row">
-            <div class="full">
-            <div class="right-match-time">
-            <div class="btn btn-primary btn-lg">
-            <a asp-area="" asp-controller="Players" asp-action="WomenSingle" asp-route-player="W">Women's Single</a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>*@
     </div>
 </secion>

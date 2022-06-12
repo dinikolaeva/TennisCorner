@@ -18,7 +18,7 @@
 
             var players = new Player[]
             {
-                // Man
+                // Men
                 new Player
                 {
                     FirstName = "Novak",

@@ -1,0 +1,54 @@
+﻿@using TennisCorner.Web.ViewModels.Players
+@model PlayersListViewModel
+@{
+    this.ViewData["Title"] = "Men's Single";
+}
+
+<section>
+    <div class="inner-mens-banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="inner-information-text">
+        <div class="container">
+            <h3>Men's Single</h3>
+            <ul class="breadcrumb">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="active">Men's Single</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="team-holder theme-padding">
+        <div class="container">
+            <div class="main-heading-holder">
+                <div class="main-heading sytle-2">
+                    <h2>Men's Single</h2>
+                    <p>Looking for statistic for men's singles players?<br>Here is the place to find it</p>
+                </div>
+            </div>
+            <div id="team-slider">
+                <div class="container">
+                    @foreach (var player in Model.Players)
+                    {
+                        <div class="col-md-4" style="padding: 10px;">
+                            <div class="team-column style-2">
+                                <img src=@player.ImageUrl alt="">
+                                <div class="player-name">
+                                    <div class="desination-2">@player.FirstName</div>
+                                    <h5>@player.LastName - <br>@player.Country.CountryAbbreviation</h5>
+                                    <span class="player-number">@player.CurrentRank</span>
+                                </div>
+                            </div>
+                            <div class="center-btn">
+                                <div class="btn btn-block btn-Players">
+                                    <a asp-area="" asp-controller="Players" asp-action="MensDetails" asp-route-id="@player.Id">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -148,12 +148,12 @@ h1 {
 }
 
 .btn.btn-primary.btn-lg {
-    float: left;
+    /*float: left;*/
     background: #9acd32;
     font-size: 15px;
     text-transform: uppercase;
     min-width: 160px;
-    height: 50px;
+    /*height: 50px;*/
     border-radius: 5px;
 }
 
@@ -1170,6 +1170,28 @@ section.main-heading {
     position: relative;
 }
 
+.inner-mens-banner {
+    float: left;
+    width: 100%;
+    min-height: 400px;
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1655037155/images/TennisCorner/10-5-atp-tour-talent-16_9_mplydh.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-women-banner {
+    float: left;
+    width: 100%;
+    min-height: 400px;
+    background-image: url('https://res.cloudinary.com/be-gorgeous/image/upload/v1655065413/images/TennisCorner/_methode_times_prod_web_bin_0a6d7cba-39e6-11e9-a664-d81d3e2c8975_ryii0o.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .inner-information {
     float: left;
     width: 100%;
@@ -1198,6 +1220,14 @@ section.main-heading {
             content: "";
             display: block;
         }
+
+#text {
+    color: #9acd32;
+}
+
+#info {
+    text-align: center;
+}
 
 .banner-top {
     float: left;
@@ -1376,6 +1406,53 @@ section {
     width: 100%;
 }
 
+.info_box {
+    width: 100%;
+    background: #9acd32;
+}
+
+.info_image {
+    width: 100%;
+    text-align: center;
+}
+
+    .info_image img {
+        max-width: 100%;
+    }
+
+.info_content {
+    padding-left: 38px;
+    padding-top: 46px;
+    padding-right: 20px;
+    padding-bottom: 31px;
+}
+
+.info_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.info_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.95;
+    margin-top: 14px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.info_text_black {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    line-height: 1.95;
+    margin-top: 14px;
+    margin-bottom: 35px;
+}
+
 .main-heading.sytle-2 h2 {
     position: relative;
     display: inline-block;
@@ -1476,7 +1553,7 @@ section#contant p {
         left: auto;
         height: 100%;
         line-height: 58px;
-        background: #d8302f;
+        background: #9acd32;
         color: #fff;
         width: 48px;
         border: 0;
@@ -1493,6 +1570,9 @@ section#contant p {
     transition: ease all 1s;
 }
 
+.center-btn {
+}
+
 .player-name h5 {
     margin: 0;
     color: #fff;
@@ -1503,7 +1583,7 @@ section#contant p {
     position: absolute;
     bottom: 100%;
     left: 0;
-    background: #d8302f;
+    background: #9acd32;
     z-index: 1;
     padding: 3px 20px 2px;
     text-transform: capitalize;
@@ -1767,8 +1847,8 @@ body section#contant .post-info span h5 {
 
 .btn {
     float: left;
-    background: #d8302f;
-    color: #fff;
+    background: #9acd32 !important;
+    color: #fff !important;
     padding: 10px 20px;
     font-size: 15px;
     border-radius: 50px;
@@ -2431,4 +2511,19 @@ span a.comment-reply-link {
         box-shadow: 0 0 100px -80px rgba(0,0,0,0.8);
         min-height: auto;
     }
+}
+
+
+.btn-Players {
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.img-Players{
+    min-height:250px;    
+    width:99%;
 }

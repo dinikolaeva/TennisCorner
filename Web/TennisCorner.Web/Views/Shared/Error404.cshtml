@@ -3,24 +3,19 @@
     this.ViewData["Title"] = "Error 404";
 }
 
-<partial name="_HeaderPartial"></partial>
-
 <div class="container">
-    <div class="row mr-5">
-        <div class="col-8">
-            <div class="row" id="error">
-                <div class="col-10">
+    <div class="row mr-2">
+        <div class="col-5">
+            <div class="row">
+                <div class="col-3">
                     <img src="@GlobalConstants.Images.Error404" class="img-thumbnail" />
-                </div>
-                <div class="col-8 pt-2">
-                    <h3>There is nothing on this page.</h3>
-                    <div class="button ml-auto mr-auto">
-                        <a asp-area="" asp-controller="Home" asp-action="Index"><span><strong>Home page</strong></span><span><strong>Home page</strong></span></a>
+                    <div class="col-8 pt-2" id="info">
+                        <div class="btn btn-block btn-Players">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Home page</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-6">
         </div>
     </div>
 </div>
