@@ -18,6 +18,18 @@
             this.playerRepository = playerRepository;
         }
 
+        public async Task<IEnumerable<T>> GetAllFemalePlayersByGenderAsync<T>()
+        {
+            var players = await this.playerRepository
+                                    .All()
+                                    .Where(p => p.Gender == "W")
+                                    .OrderBy(p => p.CurrentRank)
+                                    .To<T>()
+                                    .ToListAsync();
+
+            return players;
+        }
+
         public async Task<IEnumerable<T>> GetAllMalePlayersByGenderAsync<T>()
         {
             var players = await this.playerRepository

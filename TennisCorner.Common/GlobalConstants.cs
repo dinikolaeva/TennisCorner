@@ -159,7 +159,7 @@
 
             public const string Kontaveit = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654678687/images/TennisCorner/display_hdgdsq.jpg";
 
-            public const string Badosa = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654678977/images/TennisCorner/Badosa_RG21__14___51376409698_xjxjha.jpg";
+            public const string Badosa = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655102748/images/TennisCorner/Badosa_RG21__14___51376409698_xjxjha.jpg";
 
             public const string Jabeur = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654679162/images/TennisCorner/display_tlgubg.jpg";
 
@@ -167,7 +167,7 @@
 
             public const string Sabalenka = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654680338/images/TennisCorner/display_uqmrwr.jpg";
 
-            public const string Pliskova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654680338/images/TennisCorner/display_uqmrwr.jpg";
+            public const string Pliskova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654680992/images/TennisCorner/display_w6qnyz.jpg";
 
             public const string Pegula = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654681543/images/TennisCorner/display_xze9uq.jpg";
 
@@ -199,7 +199,7 @@
 
             public const string Tomljanovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654687332/images/TennisCorner/display_syfjsm.jpg";
 
-            public const string Muchova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654688029/images/TennisCorner/muchova11_2_xvzdlo.jpg";
+            public const string Muchova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655103071/images/TennisCorner/50010411307_5f4d5dabda_b_lhtoy8.jpg";
 
             public const string Kerber = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654688226/images/TennisCorner/display_xgst7b.jpg";
 
@@ -213,7 +213,7 @@
 
             public const string Kovinic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654689515/images/TennisCorner/display_fwuvv3.jpg";
 
-            public const string Brady = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654689808/images/TennisCorner/Brady_LIM19__101___49308167497_ef92g7.jpg";
+            public const string Brady = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655103230/images/TennisCorner/1gfk7v8o_jennifer-brady_625x300_19_December_21_bq3pri.jpg";
 
             public const string Hsieh = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654690012/images/TennisCorner/display_gyi1pa.jpg";
 
@@ -227,7 +227,7 @@
 
             public const string Pavlyuchenkova = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654691080/images/TennisCorner/display_xhnnbh.jpg";
 
-            public const string Zidansek = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654692034/images/TennisCorner/Tamara_Zidansek__49986143201___cropped_m9whye.jpg";
+            public const string Zidansek = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655103680/images/TennisCorner/d8cdfdfc-c687-4e12-9a6f-60795802d249_jslp6e.png";
         }
     }
 }

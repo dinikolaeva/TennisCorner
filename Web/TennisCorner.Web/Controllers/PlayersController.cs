@@ -48,5 +48,33 @@
 
             return this.View(viewModel);
         }
+
+        public async Task<IActionResult> WomensSingle()
+        {
+            var viewModel = new PlayersListViewModel
+            {
+                Players = await this.playersService
+                                        .GetAllFemalePlayersByGenderAsync<PlayerSimpleViewModel>(),
+            };
+
+            if (!viewModel.Players.Any())
+            {
+                return new StatusCodeResult(404);
+            }
+
+            return this.View(viewModel);
+        }
+
+        public async Task<IActionResult> WomensDetails(int id)
+        {
+            var viewModel = await this.playersService.GetPlayerByIdAsync<PlayerViewModel>(id);
+
+            if (viewModel == null)
+            {
+                return new StatusCodeResult(404);
+            }
+
+            return this.View(viewModel);
+        }
     }
 }

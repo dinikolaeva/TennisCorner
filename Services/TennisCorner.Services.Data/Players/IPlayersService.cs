@@ -7,6 +7,8 @@
     {
         Task<IEnumerable<T>> GetAllMalePlayersByGenderAsync<T>();
 
+        Task<IEnumerable<T>> GetAllFemalePlayersByGenderAsync<T>();
+
         Task<T> GetPlayerByIdAsync<T>(int id);
     }
 }
