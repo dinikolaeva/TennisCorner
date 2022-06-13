@@ -38,7 +38,7 @@
             public const string Womens = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655065413/images/TennisCorner/_methode_times_prod_web_bin_0a6d7cba-39e6-11e9-a664-d81d3e2c8975_ryii0o.jpg";
 
             // Tournaments
-            public const string AustraliaOpen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803529/images/TennisCorner/australianopen-cropped_australianopen_cropped_3s6xqnxg3lf01c650sj2r7yyt_jtkefm.jpg";
+            public const string AustraliaOpen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655104852/images/TennisCorner/australianopen-cropped_australianopen_cropped_3s6xqnxg3lf01c650sj2r7yyt_jtkefm.jpg";
 
             public const string WinnerNadal = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654803696/images/TennisCorner/83hop44s_rafael-nadal-_625x300_30_January_22_jmtcjc.webp";
 
@@ -48,7 +48,7 @@
 
             public const string AOSchemaWomen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804366/images/TennisCorner/screencapture-itftennis-en-tournament-australian-open-aus-2022-w-sl-aus-01a-2022-draws-and-results-2022-06-09-22_51_43_zweapr.png";
 
-            public const string RolandGarros2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804591/images/TennisCorner/da0a32f0189dd009c132127fbdc577ef_qtwxmq.jpg";
+            public const string RolandGarros2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655104921/images/TennisCorner/da0a32f0189dd009c132127fbdc577ef_qtwxmq.jpg";
 
             public const string WinnerNadalRG = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654804681/images/TennisCorner/gettyimages-1401181669_vluzfo.jpg";
 
@@ -58,7 +58,7 @@
 
             public const string RGSchemaWomen2022 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805199/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2022-w-sl-fra-01a-2022-draws-and-results-2022-06-09-23_05_18_kvxhan.png";
 
-            public const string AustralianOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805642/images/TennisCorner/a094af390a622b5265f9061fcd47d3ba_prr8zv.jpg";
+            public const string AustralianOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655105117/images/TennisCorner/a094af390a622b5265f9061fcd47d3ba_prr8zv.jpg";
 
             public const string WinnerDjokovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654805735/images/TennisCorner/Novak-Djokovic-4_ptnyfu.jpg";
 
@@ -78,7 +78,7 @@
 
             public const string RGSchemaWoman2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654806993/images/TennisCorner/screencapture-itftennis-en-tournament-french-open-fra-2021-w-sl-fra-01a-2021-draws-and-results-2022-06-09-23_35_51_ebkokt.png";
 
-            public const string Wimbledon2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807079/images/TennisCorner/s_TL107421-76480-1623833362428_mq4hs6.jpg";
+            public const string Wimbledon2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655105083/images/TennisCorner/s_TL107421-76480-1623833362428_mq4hs6.jpg";
 
             public const string WinnerWimbledonDjokovic = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807289/images/TennisCorner/djokovic_saj7oc.jpg";
 
@@ -88,7 +88,7 @@
 
             public const string WimbledonSchemaWoman2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807626/images/TennisCorner/screencapture-itftennis-en-tournament-wimbledon-gbr-2021-w-sl-gbr-01a-2021-draws-and-results-2022-06-09-23_46_24_rrpj4d.png";
 
-            public const string USOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807906/images/TennisCorner/11tennis-usopen-1-videoSixteenByNineJumbo1600_x6eiyl.jpg";
+            public const string USOpen2021 = "https://res.cloudinary.com/be-gorgeous/image/upload/v1655105045/images/TennisCorner/11tennis-usopen-1-videoSixteenByNineJumbo1600_x6eiyl.jpg";
 
             public const string WinnerMedvedev = "https://res.cloudinary.com/be-gorgeous/image/upload/v1654807995/images/TennisCorner/Vb9T6Dw1tI5n_b0L6ty0Ei2q8_1440x960_xca8cd.jpg";
 

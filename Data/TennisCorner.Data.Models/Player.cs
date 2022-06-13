@@ -47,5 +47,7 @@
         public int? CurrentRank { get; set; }
 
         public double TotalPrizeMoney { get; set; }
+
+        public ICollection<TournamentPlayer> TournamentPlayers { get; set; } = new HashSet<TournamentPlayer>();
     }
 }

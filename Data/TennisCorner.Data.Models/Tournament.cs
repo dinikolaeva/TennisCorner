@@ -39,5 +39,7 @@
         public int SurfaceId { get; set; }
 
         public Surface Surface { get; set; }
+
+        public ICollection<TournamentPlayer> TournamentPlayers { get; set; } = new HashSet<TournamentPlayer>();
     }
 }

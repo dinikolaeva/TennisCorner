@@ -1,10 +1,11 @@
-﻿@using TennisCorner.Web.ViewModels.Tournaments
+﻿@using TennisCorner.Common
+@using TennisCorner.Web.ViewModels.Tournaments
 @model TournamentViewModel
 @{
     this.ViewData["Title"] = @Model.TournamentName;
 }
 
-<div class="banner-top">
+<div class="banner" style="background-image: url('@Model.TournamentImageUrl')">
     <div class="container">
     </div>
 </div>
@@ -17,3 +18,101 @@
         </ul>
     </div>
 </div>
+
+<secion>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full">
+                    <div class="main-heading sytle-2">
+                        <h2>Winners</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="matchs-info">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="full">
+                    <div class="matchs-vs">
+                        <div class="vs-team">
+                            <div class="team-btw-match">
+                                <h1 id="text-black">Men`s Single winner: </h1>
+                                <img class="img-responsive img-Players" src=@Model.ManWinnerImageUrl>
+                                <a class="btn btn-block btn-Players" asp-area="" asp-controller="Players" asp-action="MensSingle">Players</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matchs-info">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="full">
+                        <div class="matchs-vs">
+                            <div class="vs-team">
+                                <div class="team-btw-match">
+                                    <h1 id="text-black">Women`s Single winner: </h1>
+                                    <img class="img-responsive img-Players" src=@Model.WomanWinnerImageUrl>
+                                    <a class="btn btn-block btn-Players" asp-area="" asp-controller="Players" asp-action="WomensSingle">Players</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="full">
+                            <div class="main-heading sytle-2">
+                                <h2>Men`s Single finals schema</h2>
+                                <p>Include Quarter-finals, Semi-finals<br>and Final</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="video_section_main theme-padding middle-bg vedio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="full">
+                            <div class="match_vedio">
+                                <img class="img-responsive" src=@Model.FinalsSchemaManImageUrl alt="#" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="full">
+                            <div class="main-heading sytle-2">
+                                <h2>Women`s Single finals schema</h2>
+                                <p>Include Quarter-finals, Semi-finals<br>and Final</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="video_section_main theme-padding middle-bg vedio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="full">
+                            <div class="match_vedio">
+                                <img class="img-responsive" src=@Model.FinalsSchemaWomenImageUrl alt="#" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</secion>
