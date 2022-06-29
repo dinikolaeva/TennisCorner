@@ -25,13 +25,13 @@
 
         public DbSet<Country> Countries { get; set; }
 
-        public DbSet<Player> Players { get; set; }
+        public DbSet<Surface> Surfaces { get; set; }
 
         public DbSet<PlayingCategory> PlayingCategories { get; set; }
 
-        public DbSet<Surface> Surfaces { get; set; }
-
         public DbSet<Tournament> Tournaments { get; set; }
+
+        public DbSet<Player> Players { get; set; }
 
         public DbSet<TournamentPlayer> TournamentsPlayers { get; set; }
 

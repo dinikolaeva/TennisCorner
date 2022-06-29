@@ -1,6 +1,8 @@
 ﻿namespace TennisCorner.Data.Models
 {
-    public class TournamentPlayer : BaseDelitableModel<int>
+    using TennisCorner.Data.Common.Models;
+
+    public class TournamentPlayer : BaseDeletableModel<int>
     {
         public int TournamentId { get; set; }
 

@@ -26,7 +26,7 @@
             var viewModel = new PlayersListViewModel
             {
                 Players = await this.playersService
-                                        .GetAllMalePlayersByGenderAsync<PlayerSimpleViewModel>(),
+                                    .GetAllMalePlayersByGenderAsync<PlayerSimpleViewModel>(),
             };
 
             if (!viewModel.Players.Any())
@@ -54,7 +54,7 @@
             var viewModel = new PlayersListViewModel
             {
                 Players = await this.playersService
-                                        .GetAllFemalePlayersByGenderAsync<PlayerSimpleViewModel>(),
+                                    .GetAllFemalePlayersByGenderAsync<PlayerSimpleViewModel>(),
             };
 
             if (!viewModel.Players.Any())
